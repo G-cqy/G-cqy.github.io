@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>历史遗址</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+    }
+
+    .logo img {
+      max-width: 150px;
+    }
+
+    nav {
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    }
+    nav ul{
+      display: flex;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 1px 35px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #777;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 0.5s;
+      height: 30px;
+    }
+
+    nav ul li::after {
+      content: "";
+      background: #d6e7ee;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+    }
+
+    nav ul li:hover {
+      color: #fff;
+    }
+
+    nav ul li:hover::after {
+      top: 50%;
+      opacity: 1;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+    }
+
+    main {
+      margin-top: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 400px;
+    }
+
+    .section .content {
+      margin-bottom: 10px;
+    }
+
+    .section h2 {
+      color: #333333;
+      font-size: 20px;
+    }
+
+    .section p {
+      color: #666666;
+      font-size: 16px;
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    .image1 {
+      width: 500px;
+      height: 200px;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./meishi.html">重庆美食</a></li>
+        <li><a href="./fengjing.html">风景名胜</a></li>
+        <li><a href="./lvyou.html">旅游指南</a></li>
+        <li><a href="./lsyizhi.html">历史遗址</a></li>
+        <li><a href="./lsrenwu.html">历史人物</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="section">
+        <div class="content">
+          <h2>北碚恐龙遗址</h2>
+          <p>北碚恐龙遗址是位于中国重庆市北碚区的一个已灭绝的恐龙化石遗址。
+            这个遗址是中国最早的恐龙化石遗址之一，
+            是中国的古生物学奠基人杨钟健院士于1939年发现的。
+            北碚恐龙遗址出土的恐龙化石种类丰富，
+            包括食肉恐龙、植食恐龙、蜥脚类恐龙、鸟脚类恐龙等。
+            其中，以食肉恐龙最为著名，如上游永川龙、董氏伤齿龙、建设气龙等。
+            这些恐龙化石为研究恐龙的生活习性、生态系统和古生物学提供了宝贵的材料。</p>
+        </div>
+        <img class="image1" src="./img/yizhi1.jpg" alt="">
+      </div>
+      <div class="section">
+        <div class="content">
+          <h2>曾家岩50号</h2>
+          <p>曾家岩50号是位于重庆市渝中区的一个历史建筑，
+            也是中国共产党在抗日战争时期的一个办公地点。
+            这个建筑是一幢两楼一底的砖木结构房屋，
+            以周恩来的名义租用，对外称“周公馆”，实际上为中国共产党在城内开展统战工作的重要据点。
+            在曾家岩50号，中国共产党的重要领导人周恩来、
+            董必武、叶剑英、邓颖超等都曾在这里工作和生活。
+            他们在这里与国民党政府谈判，推进抗日民族统一战线的建立，
+            为中国人民的抗日战争做出了重要贡献。</p>
+        </div>
+        <img class="image1" src="./img/yizhi2.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="section">
+        <div class="content">
+          <h2>丰盛古镇</h2>
+          <p>丰盛古镇位于重庆市巴南区，是一个历史悠久的古镇。
+            这个古镇有着600多年的历史，保存完好的明清建筑风格和传统手工艺，
+            被誉为“重庆江南第一古镇”。
+            丰盛古镇有着蜿蜒的街道和古朴的建筑，
+            保存着许多传统文化和历史遗迹。在这里，
+            游客可以欣赏到传统的川剧、皮影戏等表演，
+            品尝到传统的重庆小吃，如火锅、串串香等。</p>
+        </div>
+        <img class="image1" src="./img/yizhi3.jpg" alt="">
+      </div>
+      <div class="section">
+        <div class="content">
+          <h2>法国水师兵营旧址</h2>
+          <p>法国水师兵营旧址位于重庆市南岸区弹子石谦泰巷142号，
+            是一处历史悠久的建筑群。该旧址是法国殖民时期在重庆设立的重要军事据点，
+            现在已成为一个历史文化遗产，是重庆市的重要景点之一。
+            现在，法国水师兵营旧址已成为一个博物馆
+            ，展示了法国殖民时期在重庆的历史和文化。
+            游客可以在这里欣赏到当时的工艺品、生活用品和照片等珍贵文物，
+            了解法国水师兵营的历史和文化背景。</p>
+        </div>
+        <img class="image1" src="./img/yizhi4.jpg" alt="">
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    &copy; 2023 印象重庆 <a href="zj.html">总结</a>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>重庆美食</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+      padding: 20px 0;
+    }
+
+    .logo img {
+      max-width: 150px;
+    }
+    nav {
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    }
+    nav ul{
+      display: flex;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 1px 35px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #777;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 0.5s;
+      height: 30px;
+    }
+
+    nav ul li::after {
+      content: "";
+      background: #d6e7ee;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+    }
+
+    nav ul li:hover {
+      color: #fff;
+    }
+
+    nav ul li:hover::after {
+      top: 50%;
+      opacity: 1;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+    }
+
+    main {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .section {
+      width: 30%;
+      margin-bottom: 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .section img {
+      width: 50%;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .section p {
+      color: #333333;
+      text-align: left;
+      flex-grow: 1;
+    }
+
+    .section .center-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-left: 50px;
+    }
+
+    .section .center-content p {
+      color: #333333;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .section .center-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .section .center-content ul li {
+      margin-bottom: 5px;
+    }
+
+
+    footer {
+      margin-top: 20px;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./meishi.html">重庆美食</a></li>
+        <li><a href="./fengjing.html">风景名胜</a></li>
+        <li><a href="./lvyou.html">旅游指南</a></li>
+        <li><a href="./lsyizhi.html">历史遗址</a></li>
+        <li><a href="./lsrenwu.html">历史人物</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="section">
+      <img src="./img/food1.jpg" alt="">
+      <p>瓜西西火锅以其地道的口味、新鲜的食材和多种调料搭配方式，
+        吸引了众多消费者的关注和喜爱，瓜西西火锅不仅传承了川渝火锅的精髓，
+        同时也注重创新和改进，
+        为顾客带来更加优质的用餐体验。</p>
+
+    </div>
+    <div class="section">
+      <img src="./img/food2.jpg" alt="">
+      <p>肥肠鸡是一道以肥肠和鸡肉为主要原料的川菜，制作过程中，
+        通常会加入适量的豆瓣酱、姜片、蒜末、花椒等调料，
+        以及适量的香料和中药材，使得其味道更加鲜美，且具有一定的食疗作用。</p>
+    </div>
+    <div class="section">
+      <img src="./img/food3.jpg" alt="">
+      <p>美蛙肥肠鱼不仅口感独特，而且营养丰富。牛蛙和鱼肉都是富含蛋白质和微量元素的食材，有助于增强体力和提高免疫力。
+        而肥肠则含有丰富的胶原蛋白和脂肪，对皮肤保健和心血管健康有一定的益处。</p>
+    </div>
+    <div class="section">
+      <img src="./img/food4.jpg" alt="">
+      <p>胡记蹄花汤是一道传统的川菜口感鲜美，营养丰富，特别适合冬天食用。
+        蹄花具有丰富的胶原蛋白和脂肪，有助于皮肤保健和心血管健康。
+        豆腐则含有丰富的蛋白质和微量元素，有助于增强体力和提高免疫力。</p>
+    </div>
+    <div class="section">
+      <img src="./img/food5.jpg" alt="">
+      <p>降龙爪爪以鸡爪为特色，采用多种中药材和调料，经过数小时的熬制，
+        使得鸡爪鲜嫩可口，入口即化。除了鸡爪外，降龙爪爪还推出了各种美食，
+        如降龙爪爪煲、降龙爪爪小串、降龙爪爪豆干等</p>
+    </div>
+    <div class="section">
+      <div class="center-content">
+        还有很多美食等待大家来重庆品尝
+        <ul>
+          <li>大王油茶</li>
+          <li>现炸酥肉</li>
+          <li>酸辣粉</li>
+          <li>掰抄手</li>
+        </ul>
+        随便吃都不踩雷~欢迎大家
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2023 印象重庆 <a href="zj.html">总结</a>
+  </footer>
+</body>
+
+</html>

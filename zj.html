@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>总结</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    nav {
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    }
+    nav ul{
+      display: flex;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 1px 35px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #777;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 0.5s;
+      height: 30px;
+    }
+
+    nav ul li::after {
+      content: "";
+      background: #d6e7ee;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+    }
+
+    nav ul li:hover {
+      color: #fff;
+    }
+
+    nav ul li:hover::after {
+      top: 50%;
+      opacity: 1;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+    }
+
+    .logo img {
+      max-width: 150px;
+    }
+
+    .article {
+      background-color: #f5f5f5;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .article h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .article p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./meishi.html">重庆美食</a></li>
+        <li><a href="./fengjing.html">风景名胜</a></li>
+        <li><a href="./lvyou.html">旅游指南</a></li>
+        <li><a href="./lsyizhi.html">历史遗址</a></li>
+        <li><a href="./lsrenwu.html">历史人物</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="article">
+    <h2>总结</h2>
+    <p> 使用HTML技术做出了一个关于关于介绍重庆的网站，主要包括以下内容：首页、重庆美食、
+      风景名胜、旅游指南、历史遗址、历史人物，
+      每一个网页我都用了差不多三部分来对页面进行布局，分别是顶部导航栏，中间内容区域以及底部的一个总结跳转链接和版权信息
+    </p>
+    <p>用nav标签，来定义导航菜单，用有序列表li来规范菜单元素，使用伪类after、hover，在导航菜单项的末尾添加一个淡入效果
+      。它的 content 属性设置为空字符串，表示在这个元素中不要显示任何内容。还设置了比较合适的背景等以及圆角属性。
+    </p>
+    <p>中间部分就主要是用flex布局和调整照片的比例来达到一个相对比较美观的位置，设置了padding和margin等属性来规范图片，文章就设置了一些背景和内边距，还有居中等等样式。
+    </p>
+    <p>难点方面，包括以下几个方面：
+    <ol>
+      <li>布局和对齐：通过使用 flex 布局和调整网页的布局，实现了顶部导航栏、内容区域和底部的布局和对齐。</li>
+      <li> 图片样式和大小：通过设置图片的宽度以及调整padding和margin等属性，使得图片布置在合适的位置。</li>
+      <li> 文章的样式：定义了文章的样式，包括背景颜色、内边距、标题居中以及段落的样式，使得文章看起来更美观。</li>
+    </ol>
+    </p>
+    <p>未解决的问题：
+      <p>缩放页面大小导航栏会溢出，破环了原本的布局！</p>
+    </p>
+    <p>
+      总的来说，这个网页十分简陋，通过学习csdn和棋歌教学网等里面的内容，摸打滚爬才写出了这个网页，逐渐学会使用flex以及CSS中的其他语法，才解决了本次编写过程中遇到的问题。
+      虽然对于HTML以及CSS还是不太精通，但是相较以前，做完本次作业的同时我确实成长了很多。
+    </p>
+  </div>
+
+
+  <footer>
+    &copy; 2023 印象重庆 <a href="zj.html">总结</a>
+  </footer>
+</body>
+
+</html>

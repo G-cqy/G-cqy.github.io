@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>旅游指南</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+    }
+
+    .logo img {
+      max-width: 150px;
+    }
+
+    nav {
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    }
+    nav ul{
+      display: flex;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 1px 35px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #777;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 0.5s;
+      height: 30px;
+    }
+
+    nav ul li::after {
+      content: "";
+      background: #d6e7ee;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+    }
+
+    nav ul li:hover {
+      color: #fff;
+    }
+
+    nav ul li:hover::after {
+      top: 50%;
+      opacity: 1;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+    }
+
+    main {
+      margin-top: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .article {
+      flex: 1;
+    }
+
+    .article h2 {
+      color: #333333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .article p {
+      color: #666666;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .article ol {
+      color: #666666;
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    .container {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    .imgrow {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .image {
+      flex-basis: calc(50% - 10px);
+      text-align: center;
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image p {
+      margin-top: 10px;
+    }
+
+
+    footer {
+      margin-top: 20px;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./meishi.html">重庆美食</a></li>
+        <li><a href="./fengjing.html">风景名胜</a></li>
+        <li><a href="./lvyou.html">旅游指南</a></li>
+        <li><a href="./lsyizhi.html">历史遗址</a></li>
+        <li><a href="./lsrenwu.html">历史人物</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="article">
+        <h2>旅游指南</h2>
+        <p>想在重庆畅快的游玩，快来看本帖吧</p>
+        <ul>
+          <li>交通建议:<ol>
+              <li>第一交通工具推荐轨道交通，最高票价仅7元</li>
+              <li>建议乘坐第一节车厢，可以拍到许多沿途风员。</li>
+              <li>地铁、公交均支持扫码乘车，部分手机支持nfc过闸。</li>
+              <li>公交卡1小时内可免费换乘，许多民宿均有提供。</li>
+              <li>重庆多单行道，注意公交车站牌，避免坐错方向后悔莫及</li>
+            </ol>
+          </li>
+          <li>本地人建议:
+            <ol>
+              <li>去了三次重庆才知道!旅游美食住宿攻略</li>
+              <li>一定一定要提前做好攻略!订好车票和民宿哦~</li>
+              <li>来重庆最好住在解放碑附近，位于市中心，不然交通不便，又容易迷路，很麻烦!!</li>
+              <li>重庆市内交通首选轻轨，能到达大多数景点，非常方便，坐车容易堵车绕路</li>
+              <li>不坐飞机的话，一定尽量到重庆北站，重庆西站比较偏，重庆北站离主城更近</li>
+              <li>非常非常不建议自驾游!"除非你对路线很熟悉</li>
+              <li>.周一很多景点要闭馆，勿跑空!!(罗中立美术馆、三峡博物馆、重庆科技馆、悦来美术馆等)</li>
+              <li>去景区提前看好天气，有些不适合雾天逛</li>
+              <li>在重庆这样一个8D城市,不要过分依赖导航,找不到路 定要问本地人!本地人才是yyds</li>
+              <li>一定不要去出租司机推荐的住宿或者美食店铺,都是有回扣的!</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="imgrow">
+          <div class="image">
+            <img src="./img/lvyou1.jpg" alt="">
+            <p>八一路好吃街</p>
+          </div>
+          <div class="image">
+            <img src="./img/lvyou2.jpg" alt="">
+            <p>山城第三步道</p>
+          </div>
+        </div>
+        <div class="imgrow">
+          <div class="image">
+            <img src="./img/lvyou3.jpg" alt="">
+            磁器口
+          </div>
+          <div class="image">
+            <img src="./img/lvyou4.jpg" alt="">
+            李子坝轻轨站
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <footer>
+    &copy; 2023 印象重庆 <a href="zj.html">总结</a>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>历史人物</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+    }
+
+    .logo img {
+      max-width: 150px;
+    }
+
+    nav {
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    }
+    nav ul{
+      display: flex;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 1px 35px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #777;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 0.5s;
+      height: 30px;
+    }
+
+    nav ul li::after {
+      content: "";
+      background: #d6e7ee;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+    }
+
+    nav ul li:hover {
+      color: #fff;
+    }
+
+    nav ul li:hover::after {
+      top: 50%;
+      opacity: 1;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    .row {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .section img {
+      width: 150px;
+      height: 200px;
+      margin: 18px;
+    }
+
+    h3,
+    p {
+      margin: 18px;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./meishi.html">重庆美食</a></li>
+        <li><a href="./fengjing.html">风景名胜</a></li>
+        <li><a href="./lvyou.html">旅游指南</a></li>
+        <li><a href="./lsyizhi.html">历史遗址</a></li>
+        <li><a href="./lsrenwu.html">历史人物</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="section">
+        <img src="./img/renwu1.jpg" alt="">
+      </div>
+      <div class="section">
+        <h3>刘伯承</h3>
+        <p>刘伯承（1892年12月4日—1986年10月7日），原名刘明昭 ，曾用名刘伯坚 ，四川省开县人（现重庆市开州区）。
+          中国共产党的优秀党员，中华人民共和国元帅，中国人民解放军缔造者之一，伟大的无产阶级革命家、军事家、马克思主义军事理论家，军事教育家。
+          辛亥革命时期从军，1926年加入中国共产党。相继参加了北伐战争、八一南昌起义、土地革命战争、长征、抗日战争、解放战争等。
+          建国后，历任中共中央西南局第二书记，西南军政委员会主席，
+          中国人民解放军军事学院院长兼政委，中央人民政府人民革命军事委员会副主席。
+          1955年被授予元帅军衔。1986年10月7日，刘伯承在北京逝世，终年94岁。
+          刘伯承为中华民族和中国人民的解放事业建立了不朽功勋，为我国的国防建设和社会主义建设事业作出了杰出贡献，
+          对我军向正规化、现代化迈进作出了卓越的贡献</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section">
+        <img src="./img/renwu2.jpg" alt="">
+      </div>
+      <div class="section">
+        <h3>巴蔓子</h3>
+        <p>巴民族之魂——巴蔓子将军。
+          周武王讨殷商，伐纣王时，“实得巴蜀之师”（《尚书》）；“巴师勇锐，歌舞（战阵）以凌（压倒）殷人”。
+          周天子立国，建周朝，封姬姓子弟为巴国君王，统巴人之地，建都江州（今重庆），为当时“南土诸侯王国之首”。
+          经春秋、战国，巴国出现了一位代表一方的英雄——巴蔓子将军。巴蔓子时期巴国内乱，国君遭受胁迫。
+          蔓子将军曾向楚国国君求援，并许巴国三座城池为酬。内乱平息，楚国使臣来求践约。
+          他委婉、慷慨作答：“许诺，为大丈夫之言。然，巴国疆土不可分，人臣岂能私下割城。吾宁可一死，以谢食言之罪。”言毕，自刎，满座大惊。
+          使臣无奈，捧蔓子将军头颅归。楚王唏嘘：“如得此忠臣，又何需几座城池。”遂以上卿之礼葬其头颅；巴举国悲痛，于国都厚葬巴蔓子将军无头之遗体。
+          常璩对巴蔓子的壮烈行为深为敬佩，评价说：“若蔓子之忠烈，范目之果毅，风淳俗厚，世挺名将，斯乃江、汉之含灵，山岳之精爽乎！”。</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="section">
+        <img src="./img/renwu3.jpg" alt="">
+      </div>
+      <div class="section">
+        <h3>甘宁</h3>
+        <p>甘宁（？-215年），字兴霸，三国时巴郡临江（今重庆忠县）人， 孙吴将领。
+          甘宁少有气力，好游侠，在地方上为非作歹，组成渠师抢夺船只财物，崇尚奢华，
+          人称锦帆贼。青年时停止抢劫，熟读诸子。曾任蜀郡丞，
+          先投靠刘表，但未被重用，后归依孙权，孙权加以重用。曾随周瑜在乌林击败曹操在南郡攻打曹仁夺取夷陵。
+          随鲁肃镇守益阳（今湖南境内）拒关羽，
+          以功升任西陵（今湖北麻城县）太守，折冲将军。曹操出兵濡须，甘宁任前都督迎战，
+          率兵百余，夜袭曹营，曹兵败退，创造了“百人闯曹营”的有名战例。
+          建安十二年（207年），合肥战役中，甘宁与吕蒙、凌统等人随孙权过逍遥津北上，率部千余人，大战魏将张辽。
+          建安二十年（215年），再次攻打合肥时战死，归葬于故里万县甘宁乡贯风村。
+          甘宁虽然粗野凶狠，暴躁嗜杀，甚至违反承诺、违抗命令，但是，开朗豪爽，有勇有谋，轻视钱财，敬重士人，厚待士卒，并深得士卒拥戴。陈寿在史书中将他列为“江表之虎臣”。</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2023 印象重庆 <a href="zj.html">总结</a>
+  </footer>
+</body>
+
+</html>

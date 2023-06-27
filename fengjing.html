@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>风景名胜</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+    }
+
+    .logo img {
+      max-width: 150px;
+    }
+
+    nav {
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    }
+    nav ul{
+      display: flex;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 1px 35px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #777;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 0.5s;
+      height: 30px;
+    }
+
+    nav ul li::after {
+      content: "";
+      background: #d6e7ee;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+    }
+
+    nav ul li:hover {
+      color: #fff;
+    }
+
+    nav ul li:hover::after {
+      top: 50%;
+      opacity: 1;
+    }
+
+
+    nav ul li a {
+      text-decoration: none;
+    }
+
+    main {
+      margin-top: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 400px;
+    }
+
+    .section .content {
+      margin-bottom: 10px;
+    }
+
+    .section h2 {
+      color: #333333;
+      font-size: 20px;
+    }
+
+    .section p {
+      color: #666666;
+      font-size: 16px;
+      width: 80%;
+      margin-left: 10%;
+    }
+
+    .image1 {
+      width: 500px;
+      height: 200px;
+    }
+
+    .image2 {
+      width: 250px;
+      height: 100px;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./meishi.html">重庆美食</a></li>
+        <li><a href="./fengjing.html">风景名胜</a></li>
+        <li><a href="./lvyou.html">旅游指南</a></li>
+        <li><a href="./lsyizhi.html">历史遗址</a></li>
+        <li><a href="./lsrenwu.html">历史人物</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="section">
+        <div class="content">
+          <h2>洪崖洞</h2>
+          <p>洪崖洞是重庆市的一个历史悠久的区域，
+            位于嘉陵江畔的山崖上。它是一个充满传统建筑风格的商业区，
+            以其独特的建筑和风俗文化而著名。洪崖洞的建筑群是一组由石阶、
+            桥梁、岩石和木头构成的古老建筑群，其中最著名的是洪崖洞的古建筑——洪崖洞吊脚楼。
+            这些建筑大多数是由明清时期的移民建造的，被认为是重庆市最古老的建筑之一。</p>
+        </div>
+        <img class="image1" src="./img/fengjing1.jpg" alt="">
+      </div>
+      <div class="section">
+        <div class="content">
+          <h2>解放碑</h2>
+          <p>重庆解放碑，又称“抗战胜利纪功碑”，
+            是中华人民共和国重庆市的标志性建筑，
+            也是中国西南地区的纪念碑。它位于重庆市中心，
+            于1946年10月31日动工，1947年8月落成。碑身高27.5米，
+            连同台座在内共高50.7米，重约50吨。
+            如今，这里已成为游客必游之地，
+            并被列入国家重点文物保护单位和国家级抗战遗址名录。</p>
+        </div>
+        <img class="image1" src="./img/fengjing2.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="section">
+        <div class="content">
+          <h2>朝天门</h2>
+          <p>朝天门的建筑群是一组古老的水上建筑，
+            包括石阶、桥梁、岩石和木头等元素。
+            这些建筑大多数是由明清时期的移民建造的，
+            被认为是中国西南地区最古老的水上建筑之一。
+            此外，朝天门也是一个美食聚集地，游客可以在这里品尝到各种地道的重庆美食。
+            站在朝天门的观景台上，还可以欣赏到嘉陵江和长江的交汇处的美景，令人流连忘返。</p>
+        </div>
+        <img class="image2" src="./img/fengjing3.jpg" alt="">
+      </div>
+      <div class="section">
+        <div class="content">
+          <h2>长江索道</h2>
+          <p>重庆长江索道，又称“重庆过江索道”，
+            是连接重庆市渝中区和南岸区的一座跨江缆车。
+            它起于渝中区的解放碑，止于南岸区的上新街，
+            全长1166米，跨越长江，最高时速可达每秒6米。
+            索道共有20个车厢，每个车厢可容纳6人，
+            全程约需3分钟。从索道上可以俯瞰长江两岸的美景，如解放碑、洪崖洞、南滨路、南山等。
+            此外，在索道上还可以欣赏到独特的人文景观，如长江大桥、长江航标、岩壁上的佛像等。</p>
+        </div>
+        <img class="image2" src="./img/fengjing4.jpg" alt="">
+      </div>
+      <div class="section">
+        <div class="content">
+          <h2>南山一棵树</h2>
+          <p>重庆南山一棵树是重庆市南岸区的一处观景台，位于南山风景区内的凤凰山上。
+            这个观景台是由一棵巨大的榕树形成的，
+            周围环境优美，视野开阔，可以俯瞰整个重庆市的美景。
+            在这个观景台上，游客可以欣赏到重庆市的美丽夜景和市容市貌。
+            这里有许多摄影爱好者和游客前来拍摄重庆市的美丽夜景。
+            此外，在观景台周围还有一些小吃摊和商店
+            ，游客可以在这里品尝当地的美食和购买纪念品。</p>
+        </div>
+        <img class="image2" src="./img/fengjing5.jpg" alt="">
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    &copy; 2023 印象重庆 <a href="zj.html">总结</a>
+  </footer>
+</body>
+
+</html>

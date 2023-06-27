@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>印象重庆</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+    
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+    }
+    
+    .logo img {
+      max-width: 150px;
+    }
+    
+    nav {
+      height: 50px;
+      background: #fff;
+      border-radius: 50px;
+      padding: 10px;
+      margin-right: 10px;
+      box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    }
+    nav ul{
+      display: flex;
+    }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 1px 35px;
+      margin-left: 5px;
+      margin-right: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      color: #777;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      transition: color 0.5s;
+      height: 30px;
+    }
+
+    nav ul li::after {
+      content: "";
+      background: #d6e7ee;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s;
+    }
+
+    nav ul li:hover {
+      color: #fff;
+    }
+
+    nav ul li:hover::after {
+      top: 50%;
+      opacity: 1;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+    }
+    
+    main {
+      background-color: #ffffff;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-top: 20px;
+    }
+    
+    .banner {
+      margin: 0 auto;
+      width: 90%;
+      height: 0;
+      padding-bottom: 30%;
+      background-image: url("./img/index.jpg");
+      background-size:100% 100%;
+    }
+    
+    .content {
+      display: flex;
+      align-items: center;
+    }
+    
+    .content img {
+      width: 380px;
+      height:350px;
+      margin-right: 20px;
+    }
+    
+    .content p {
+      color: #333333;
+      margin-left: 30px;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 20px 0;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./meishi.html">重庆美食</a></li>
+        <li><a href="./fengjing.html">风景名胜</a></li>
+        <li><a href="./lvyou.html">旅游指南</a></li>
+        <li><a href="./lsyizhi.html">历史遗址</a></li>
+        <li><a href="./lsrenwu.html">历史人物</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="banner"></div>
+  
+  <main>
+    <div class="content">
+      <img src="./img/indexmain.jpg" alt="Small Image">
+      <h2>重庆</h2>
+      <div class="text">
+      <p> 重庆是中国四大直辖市之一，也是中国内陆地区唯一的直辖市。它地处长江中上游地区，横跨东经105°17'至110°11'，北纬28°10'至32°13'之间。重庆市辖区总面积为82,400平方千米，是中国面积最大的直辖市之一。</p>
+      <p>重庆是一个充满活力和魅力的城市，以其独特的地理特点和悠久的历史文化而闻名。作为重要的交通枢纽和经济中心，重庆是中国西南地区的商业、金融和工业中心之一。</p>
+      <p>此外，重庆也以其丰富的旅游资源而吸引着众多游客。重庆是长江三峡的起点，拥有壮丽的自然风光和迷人的山水景色。著名的景点包括长江索道、洪崖洞、解放碑、南山植物园、磁器口古镇等。此外，重庆还以其独特的火锅文化和美食而闻名，让人们可以品尝到各种美味的重庆火锅和特色小吃。</p>
+      <p>重庆也是一个充满历史和文化底蕴的城市。它曾是中国的国民党政府在抗日战争和解放战争期间的重要据点，留下了许多历史遗址和纪念馆。重庆还是中国重要的文化艺术中心之一，拥有丰富多样的戏剧、音乐、舞蹈和美术等艺术表现形式。</p>
+      <p>总之，重庆是一个具有独特魅力和丰富资源的城市，它的美食、自然风光、历史文化和现代发展相结合，为游客提供了丰富多彩的体验和探索机会。</p>
+    </p>
+    </div>
+</div>
+  </main>
+  
+  <footer>
+    &copy; 2023 印象重庆 <a href="zj.html">总结</a>
+  </footer>
+</body>
+</html>
